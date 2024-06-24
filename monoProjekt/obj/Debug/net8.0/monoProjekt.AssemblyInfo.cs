@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("monoProjekt")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+21414562b6a41a8c200292d5010de55603735f0c")]
 [assembly: System.Reflection.AssemblyProductAttribute("monoProjekt")]
 [assembly: System.Reflection.AssemblyTitleAttribute("monoProjekt")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

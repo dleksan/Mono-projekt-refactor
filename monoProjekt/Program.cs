@@ -2,9 +2,10 @@ using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using monoProjekt;
-using monoProjekt.Data;
+
 using monoProjekt.Mapping;
-using monoProjekt.Services;
+using Projekt.Sevice.DatabaseModels;
+
 
 
 

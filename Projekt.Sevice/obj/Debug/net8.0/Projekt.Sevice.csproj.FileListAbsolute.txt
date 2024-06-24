@@ -1,0 +1,13 @@
+C:\Users\draze\Desktop\projekt\monoProjekt\Projekt.Sevice\bin\Debug\net8.0\Projekt.Sevice.deps.json
+C:\Users\draze\Desktop\projekt\monoProjekt\Projekt.Sevice\bin\Debug\net8.0\Projekt.Sevice.dll
+C:\Users\draze\Desktop\projekt\monoProjekt\Projekt.Sevice\bin\Debug\net8.0\Projekt.Sevice.pdb
+C:\Users\draze\Desktop\projekt\monoProjekt\Projekt.Sevice\obj\Debug\net8.0\Projekt.Sevice.csproj.AssemblyReference.cache
+C:\Users\draze\Desktop\projekt\monoProjekt\Projekt.Sevice\obj\Debug\net8.0\Projekt.Sevice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\draze\Desktop\projekt\monoProjekt\Projekt.Sevice\obj\Debug\net8.0\Projekt.Sevice.AssemblyInfoInputs.cache
+C:\Users\draze\Desktop\projekt\monoProjekt\Projekt.Sevice\obj\Debug\net8.0\Projekt.Sevice.AssemblyInfo.cs
+C:\Users\draze\Desktop\projekt\monoProjekt\Projekt.Sevice\obj\Debug\net8.0\Projekt.Sevice.csproj.CoreCompileInputs.cache
+C:\Users\draze\Desktop\projekt\monoProjekt\Projekt.Sevice\obj\Debug\net8.0\Projekt.Sevice.sourcelink.json
+C:\Users\draze\Desktop\projekt\monoProjekt\Projekt.Sevice\obj\Debug\net8.0\Projekt.Sevice.dll
+C:\Users\draze\Desktop\projekt\monoProjekt\Projekt.Sevice\obj\Debug\net8.0\refint\Projekt.Sevice.dll
+C:\Users\draze\Desktop\projekt\monoProjekt\Projekt.Sevice\obj\Debug\net8.0\Projekt.Sevice.pdb
+C:\Users\draze\Desktop\projekt\monoProjekt\Projekt.Sevice\obj\Debug\net8.0\ref\Projekt.Sevice.dll

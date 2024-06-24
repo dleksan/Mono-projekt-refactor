@@ -126,7 +126,6 @@ C:\Users\draze\Desktop\projekt\monoProjekt\monoProjekt\bin\Debug\net8.0\tr\Micro
 C:\Users\draze\Desktop\projekt\monoProjekt\monoProjekt\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\draze\Desktop\projekt\monoProjekt\monoProjekt\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\draze\Desktop\projekt\monoProjekt\monoProjekt\bin\Debug\net8.0\AutoMapper.dll
-C:\Users\draze\Desktop\projekt\monoProjekt\monoProjekt\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\draze\Desktop\projekt\monoProjekt\monoProjekt\bin\Debug\net8.0\Ninject.dll
 C:\Users\draze\Desktop\projekt\monoProjekt\monoProjekt\bin\Debug\net8.0\Ninject.Web.Common.dll
 C:\Users\draze\Desktop\projekt\monoProjekt\monoProjekt\bin\Debug\net8.0\Ninject.Web.AspNetCore.dll
@@ -134,3 +133,6 @@ C:\Users\draze\Desktop\projekt\monoProjekt\monoProjekt\bin\Debug\net8.0\Ninject.
 C:\Users\draze\Desktop\projekt\monoProjekt\monoProjekt\obj\Debug\net8.0\monoProjekt.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\draze\Desktop\projekt\monoProjekt\monoProjekt\bin\Debug\net8.0\Autofac.dll
 C:\Users\draze\Desktop\projekt\monoProjekt\monoProjekt\bin\Debug\net8.0\Autofac.Extensions.DependencyInjection.dll
+C:\Users\draze\Desktop\projekt\monoProjekt\monoProjekt\obj\Debug\net8.0\monoProjekt.sourcelink.json
+C:\Users\draze\Desktop\projekt\monoProjekt\monoProjekt\bin\Debug\net8.0\Projekt.Sevice.dll
+C:\Users\draze\Desktop\projekt\monoProjekt\monoProjekt\bin\Debug\net8.0\Projekt.Sevice.pdb

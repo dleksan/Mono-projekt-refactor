@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using monoProjekt.Models;
+using Projekt.Sevice.DatabaseModels;
 
 
 namespace monoProjekt.Mapping

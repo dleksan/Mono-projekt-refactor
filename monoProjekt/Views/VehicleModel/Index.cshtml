@@ -1,0 +1,125 @@
+﻿                            @model VehicleMakeModel
+
+@{
+    ViewData["Title"] = "";
+}
+
+<div class="panel panel-default todo-panel">
+    <div class="panel-heading">@ViewData["Title"]</div>
+
+  
+
+
+    <nav aria-label="Page navigation" class="paging">
+        <ul class="pagination">
+            <li class="page-item @(Model.PagingInfo.HasPreviousPage ? "" : "disabled")">
+                <a class="page-link" asp-action="Index" asp-route-pageIndex="@(Model.PagingInfo.PageIndex - 1)" asp-route-sortOrder="@Model.SortParams.SortOrder"
+                   asp-route-searchString="@Model.FilterParams.SearchString" asp-route-searchStringModel="@Model.FilterParams.SearchStringModel" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+
+            @for (var i = 1; i <= Model.PagingInfo.TotalPages; i++)
+            {
+                <li class="page-item @(i == Model.PagingInfo.PageIndex ? "active" : "")">
+                    <a class="page-link" asp-action="Index" asp-route-pageIndex="@i" asp-route-sortOrder="@Model.SortParams.SortOrder"
+                       asp-route-searchString="@Model.FilterParams.SearchString" asp-route-searchStringModel="@Model.FilterParams.SearchStringModel">@i</a>
+                </li>
+            }
+
+            <li class="page-item @(Model.PagingInfo.HasNextPage ? "" : "disabled")">
+                <a class="page-link" asp-action="Index" asp-route-pageIndex="@(Model.PagingInfo.PageIndex + 1)" asp-route-sortOrder="@Model.SortParams.SortOrder"
+                   asp-route-searchString="@Model.FilterParams.SearchString" asp-route-searchStringModel="@Model.FilterParams.SearchStringModel" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+
+
+    <form asp-action="Index" method="get">
+        <div class="search">
+            <input type="text" name="searchString" value="@ViewData["CurrentFilter"]" class="form-control" placeholder="Search Make" />
+            <input type="hidden" name="sortOrder" value="@ViewData["CurrentSort"]" />
+            <input type="hidden" name="pageIndex" value="@Model.PagingInfo.PageIndex" />
+            <input type="hidden" name="searchString" value="@Model.FilterParams.SearchString" />
+            <button type="submit" class="btn btn-primary ml-2">Search make</button>
+        </div>
+
+    </form>
+
+    <form asp-action="Index" method="get">
+        <div class="search">
+            <input type="text" name="searchStringModel" value="@ViewData["CurrentFilterModel"]" class="form-control" placeholder="Search model" />
+            <input type="hidden" name="pageIndex" value="@Model.PagingInfo.PageIndex" />
+            <input type="hidden" name="searchStringModel" value="@Model.FilterParams.SearchStringModel" />
+            <button type="submit" class="btn btn-primary ml-2">Search model</button>
+        </div>
+    </form>
+
+    <div class="sort" style="display:inline">
+        <a asp-action="Index" asp-route-sortOrder="@ViewData["NameSortParm"]" asp-route-searchString="@ViewData["CurrentFilter"]" asp-route-pageIndex="@Model.PagingInfo.PageIndex">Sort by name</a>
+    </div>
+
+    <table class="table table-hover">
+        <thead>
+        </thead>
+        <tbody>
+
+            @foreach (var make in Model.vehicleMakes)
+            {
+           
+
+                <tr>
+                    <td colspan="3">
+                        <table class="table table-hover" class="modelTable">
+                           
+                            <tbody>
+                                     
+                            <td>
+                                <div class="naming">
+                                    Make Name: @make.Name
+
+                                </div>
+
+                                    @foreach (var vmodel in Model.vehicleModels.Where(m => m.MakeId == make.Id))
+                                    {
+                                <tr>
+
+                                    <td>
+                                        
+                                        <div class="naming">
+                                           Model Name:
+                                        </div>
+
+                                        <form asp-action="EditModel" method="post" class="form-inline">
+                                            <input type="hidden" name="Id" value="@vmodel.Id" />
+                                            <input type="hidden" name="MakeId" value="@vmodel.MakeId" />
+                                            <input type="text" name="Name" value="@vmodel.Name" class="form-control" placeholder="Name" />
+                                            <div class="naming">
+                                             Model Abrv:
+
+                                            </div>
+                                            <input type="text" name="Abrv" value="@vmodel.Abrv" class="form-control" placeholder="Abrv" />
+                                            <button type="submit" class="btn btn-primary ml-2">Save</button>
+                                        </form>
+
+
+                                        <form asp-action="DeleteModel" method="post" style="display:inline;">
+                                            <input type="hidden" name="id" value="@vmodel.Id" />
+                                            <button type="submit" class="btn btn-danger">Delete</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                                    }
+
+            </tbody>
+        </table>
+        </td>
+        </tr>
+            }
+
+
+
